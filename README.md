@@ -2,7 +2,7 @@
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+This program can analyze a file with different colors and can display certain colors values. Eventually, it will identify what are color combinations that can be problematic for people who are color blind.
 
 ### v0.2 Updates
 
@@ -15,7 +15,7 @@
 
 ## Developer
 
-!!!Alyssa Allmann!!!
+Alyssa Allmann
 
 ## Example
 
@@ -29,31 +29,38 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+cout << "Please enter the file to be opened:\n";
+getline(cin,fileName);
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
 
-!!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
+I have used different variables like int and string to identify  the  different  types of lines and amounts:
+string line= "";
+int amount;
 
 ### Console Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
-
+I have used a cout statement outputs to end with a certian line:
+cout << line[counter];
 ### Decisions
 
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
-
+ I used an if statement liketo narrow down the hexadecimals and colors:
+  if(line [counter] >= '0'&& line[counter] <= '9' || line[counter] >= 'a' && line[counter] <= 'f' || line[counter] >= 'A' && line[counter] <= 'F'){
+  cout << line[counter]; 
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
-
+I used a while loop when directing to find the pound sign. This allows the code to find the pound sign then followed by the color: 
+while( !reader.eof())
+{
+getline(reader,line);
+position = line.find("#");
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
-
+I  used  a cin input when asking for a spceifc file to open: 
+getline(cin,fileName);
 ### Arrays/Vectors
 
 *Coming in version 0.2*
