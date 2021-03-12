@@ -38,28 +38,33 @@ getline(cin,fileName);
 ### Variables and Data Types
 
 I have used different variables like int and string to identify  the  different  types of lines and amounts:
+
 string line= "";
 int amount;
 
 ### Console Input and Output
 
 I have used a cout statement outputs to end with a certian line:
+
 cout << line[counter];
 ### Decisions
 
  I used an if statement liketo narrow down the hexadecimals and colors:
+ 
   if(line [counter] >= '0'&& line[counter] <= '9' || line[counter] >= 'a' && line[counter] <= 'f' || line[counter] >= 'A' && line[counter] <= 'F'){
   cout << line[counter]; 
 ### Iteration
 
 I used a while loop when directing to find the pound sign. This allows the code to find the pound sign then followed by the color: 
+
 while( !reader.eof())
 {
 getline(reader,line);
 position = line.find("#");
 ### File Input and Output
 
-I  used  a cin input when asking for a spceifc file to open: 
+I  used  a cin input when asking for a spceifc file to open:  
+
 getline(cin,fileName);
 ### Arrays/Vectors
 
