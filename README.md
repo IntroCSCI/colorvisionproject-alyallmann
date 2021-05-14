@@ -9,8 +9,7 @@ This program can analyze a file with different colors and can display certain co
 I added the list of hex values that are similar and different from all the color choices. I added functions and vectors to complete the code for the next step of finding out the best options for colorblind people and how colors can look alike. 
 
 ### v1.0 Updates
-
-*Coming soon*
+For this part I added two files and created a class to distinguish the classes. I also added more code to eliminate certain colors that could clash with others that would make it hard for colorblind people to know which one is which. 
 
 
 ## Developer
@@ -80,4 +79,16 @@ I used pass-by-reference to count and be able to change the amount of numbers/le
 
 ### Classes
 
-*Coming in version 1.0*
+I added both public and private class to my code to hold the data of adding colors and also picking which ones are a compatiable:
+class color
+{
+  private: 
+  string color;
+  vector <char> colorAnalyze;
+
+  public:
+  void setColor(string);
+  string getColor ();
+  void addColor (char);
+  int getColorCompleted ();
+};

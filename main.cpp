@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include "color.h"
 using namespace std;
 
 bool uniqueColor(string &, vector <string> &);
