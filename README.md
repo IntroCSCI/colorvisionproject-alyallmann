@@ -79,7 +79,7 @@ I used pass-by-reference to count and be able to change the amount of numbers/le
 
 ### Classes
 
-I added both public and private class to my code to hold the data of adding colors and also picking which ones are a compatiable:
+I added both public and private class to my code to hold the data of adding colors and also picking which ones are a compatiable. I also declared the different types of variables and data types in both files.:
 class color
 {
   private: 
